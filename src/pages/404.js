@@ -39,13 +39,11 @@ const NotFoundPage = () => {
         <br />
         {process.env.NODE_ENV === "development" ? (
           <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
+           
           </>
         ) : null}
         <br />
-        <Link to="/">Go home</Link>.
+        <Link to="/">Home</Link>
       </p>
     </main>
   )
