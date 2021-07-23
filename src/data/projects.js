@@ -1,4 +1,4 @@
-const links = [
+const projects = [
     {
       text: "stonk",
       url: "https://www.gatsbyjs.com/docs/tutorial/",
@@ -33,4 +33,4 @@ const links = [
     },
    ]
 
-   module.exports = links   
+   module.exports = projects   

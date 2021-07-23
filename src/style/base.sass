@@ -1,0 +1,31 @@
+@font-face 
+   font-family: 'SF light'
+   src: url("../font/sf-ui-display-light-58646b33e0551.otf") format("opentype")
+
+@font-face 
+   font-family: 'SF medium'
+   src: url("../font/sf-ui-display-medium-58646be638f96.otf") format("opentype")
+
+@font-face 
+   font-family: 'SF bold'
+   src: url("../font/sf-ui-display-bold-58646a511e3d9.otf") format("opentype")
+
+
+@mixin text($weight, $color, $size)
+    font-size: $size
+    font-weight: $weight
+    color: $color
+
+@mixin flex($prop, $align, $justify)
+    display: flex
+    flex-direction: $prop
+    align-items: $align
+    justify-content: $justify
+
+    
+body
+    background: #F9F9F9
+    font-family: 'SF light'
+
+.land
+    
