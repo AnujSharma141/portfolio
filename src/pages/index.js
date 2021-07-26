@@ -35,11 +35,9 @@ const IndexPage = () => {
       setLoad(false)
   }, 1700); 
   const toggleSwitch = () => setDark(!dark)   
-  dark? document.querySelector("body").className = "dark"
-  : document.querySelector("body").className = "light"
 
   return (
-    <main>
+    <main className={dark?"dark main":"light main"}>
       <title>Anuj Sharma</title>
       {load?<Loader />:
       <>
@@ -87,7 +85,7 @@ const IndexPage = () => {
         <div className="project-counter" >
           <h4 className={dark?"project-title dark-title": "project-title"}>{item.text}</h4>
           <p className={dark?"project-text dark-text": "project-text"}>{item.description}</p>
-          <a className={dark?"project-button dark-context": "project-button"} style={{background: dark?item.color:item.button}} href="">view</a>
+          <a target="blank" className={dark?"project-button dark-context": "project-button"} style={{background: dark?item.color:item.button}} href={item.url}>view</a>
         </div>
       </div>
       </>
@@ -99,14 +97,13 @@ const IndexPage = () => {
     <h2 className={dark?"contact-title dark-title": "contact-title"}>connect with me!</h2>
     <p className="contact-text">feel free to drop a mail </p>
     <div className="contact-social">
-    <a className="contact-mail" href="">email</a>
-    <div>
-    {social.map(item =>{
+    <a className="contact-mail" href="mailto:anujsharma76757@gmail.com">email</a>
+    <div className="contact-social-links">
+    {social.map(item =>{    
       return(
         <>
-        <a className="contact-social-link" href={item.link}>
-          /
-          <img className="contact-social-icon" src={item.icon} alt="" />
+        <a target="blank" className="contact-social-link" href={item.link}>
+            <img className="contact-social-icon"  src={item.icon} alt="" />
         </a> 
         </>
       )

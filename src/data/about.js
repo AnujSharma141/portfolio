@@ -1,3 +1,3 @@
-const about = "text here"
+const about = "I am a pre final year student persuing B Tech. from The LNM Institute of Information Technology. I am a Javascript Developer and working on the web since I was 15. I have expertise in web styling and in-depth knowledge of CSS and SASS. I like to read about web tech and stay updated with current industry trends. I am comfortable reading documentations and have worked with a vast variety of web technologies like GraphQL, Apollo, Prisma, Gatsby, React Native, Webpack and more. I am also a design enthusist and self learning and evolving in UX UI design.   "
 
 module.exports = about
