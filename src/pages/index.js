@@ -18,6 +18,8 @@ import laptop from "../images/laptop_1f4bb.png"
 import ruler from "../images/straight-ruler_1f4cf.png"
 import mail from "../images/envelope_2709-fe0f.png"
 import heart from "../images/red-heart_2764-fe0f.png"
+import abt from "../images/man-technologist_1f468-200d-1f4bb.png"
+
 
 const Loader = () => {
     return(
@@ -46,18 +48,11 @@ const IndexPage = () => {
       </div>
       <div className={dark?"land dark-land": "land"}>
       
-      <Rotate top left cascade>
-        <div className={dark?"graphic dark-graphic": "graphic"}>
-          <div className={dark?"graphic-elipse elipse-blue dark-elipse-blue": "graphic-elipse elipse-blue"}>
-              <img className="graphic-laptop" src={laptop} alt="" /></div>
-          <div className={dark?"graphic-label label-orange dark-label-orange": "graphic-label label-orange"}>Javascript Developer</div>
-          <div className={dark?"graphic-label label-green dark-label-green": "graphic-label label-green"}>UI Designer</div>
-          <div className={dark?"graphic-elipse elipse-pink dark-elipse-pink": "graphic-elipse elipse-pink"}><img className="graphic-ruler" src={ruler} alt="" /></div>
-        </div>
-        </Rotate>
+      
 
-        <Fade top cascade>
+        
         <div className={dark?"textbox dark-textbox": "textbox"}>
+        <div>
         <Swing>    
         <img className="textbox-img" src={wave} alt="" />
         </Swing>
@@ -66,14 +61,23 @@ const IndexPage = () => {
           <h3 className={dark?"textbox-title dark-title": "textbox-title"}>Anuj Sharma</h3>
         </div>
       </div>
+      <Fade top cascade>
+      <div className="textbox-labels">
+      <div className={dark?"textbox-label label-orange dark-label-orange": "textbox-label label-orange"}>Javascript Developer</div>
+      <div className={dark?"textbox-label label-green dark-label-green": "textbox-label label-green"}>UI Designer</div>
+      </div>
       </Fade>
+      </div>  
+          
+     
       
     </div>
 
 
     <div className={dark?"about dark-about": "about"}>
-    <h2 className="about-title">About</h2>
-    <p className="about-text">{about}</p>
+    <img src={abt} className="about-img" alt="" />
+    <h2 className={dark?"about-title dark-about-title": "about-title"}>About</h2>
+    <p className={dark?"about-text dark-about-text": "about-text"}>{about}</p>
     </div>
     
     <div className={dark?"project dark-project": "project"}>

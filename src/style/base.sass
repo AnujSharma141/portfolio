@@ -55,26 +55,6 @@ body::-webkit-scrollbar-thumb
     @include flex($prop: row, $align: center, $justify: normal)
     height: 48vw
 
-.graphic
-    @include flex($prop: column, $align: flex-end, $justify: center)  
-    background: white
-    height: 28vw
-    margin-top: -1vw
-    width: 28vw
-    border-radius: 20vw
-    margin-left: -11vw        
-    &-elipse
-        border-radius: 40vw
-    &-laptop
-        width: 3.7vw 
-    &-ruler  
-        width: 2.9vw     
-    &-label
-        font-size: 1.2vw
-        padding: 1.2vw 2vw
-        border-radius: 0.9vw     
-        margin: 1vw
-        font-family: 'SF medium'
 
 .label-orange
     color: #C9602E
@@ -94,49 +74,59 @@ body::-webkit-scrollbar-thumb
     margin: 3.7vw 8.3vw 0 0   
 
 .textbox
-    margin-left: 24vw
+    margin-left: 22vw
     margin-top: 1vw
-    width: 44vw
-    height: 15vw
+    width: 56vw
+    height: 30vw
     background: white
     box-shadow: 0 0 3vw #f3f3f3
     border-radius: 2.2vw
-    @include flex($prop: row, $align: center, $justify: normal)
+    @include flex($prop: row, $align: normal, $justify: space-between)
     &-text
         font-family: 'SF light'
         @include text($weight: 300, $color: #CCCCCC , $size: 1.5vw)  
-        margin: -0.3vw 0 0 0       
+        margin: 7vw 0 0 5.2vw       
         
     &-img
-        width: 5.4vw   
-        margin: 0 4.2vw 0 5.2vw 
+        width: 4.5vw   
+        margin: 5vw 4.2vw 0 5.2vw 
     &-title     
         font-family: 'SF semibold'
 
-        margin: 0.6vw 0 0 0 
-        @include text($weight: 400, $color: black, $size: 3.6vw)
+        margin: 0.9vw 0 0 5.2vw  
+        @include text($weight: 400, $color: black, $size: 4.3vw)
+    &-labels
+        @include flex($prop: column, $align: flex-end, $justify: flex-start)
+        margin: 3vw 2vw
+    &-label
+        font-size: 1.1vw
+        padding: 1.2vw 2vw
+        border-radius: 0.9vw     
+        margin: 0.75vw
+        font-family: 'SF medium'
+        
            
 .about
-    width: 74vw
+    width: 60vw
     height: 30vw
     border-radius: 4vw
-    margin: 5vw 12vw
+    margin: 5vw 25vw
     padding: 2.5vw 0vw          
-    color: white
-    background: #B56BFF
-    
+
+    &-img
+        width: 4vw
     &-title
         font-family: 'SF semibold'
         font-size: 4.85vw
-        margin: 1.6vw 6vw 1.3vw 7vw
-        // color: black
+        margin: 1.6vw 0vw 1.3vw 0vw
+        color: black
     &-text
         font-family: 'SF light'
         line-height: 2.84vw
         font-size: 1.28vw
-        margin: 1vw 7vw
-        width: 60vw
-        color: #ffffffcb    
+        margin: 1vw 0vw
+        width: 50vw
+        color: #8d8d8dcb    
 
 .project
     width: 100%
@@ -157,7 +147,7 @@ body::-webkit-scrollbar-thumb
         
         width: 65vw
         border-radius: 3vw
-        background: #e7e7e7
+
         height: 33vw
         margin: 7vw 0 0 0
     &-img
@@ -269,8 +259,11 @@ body::-webkit-scrollbar-thumb
         background: #662556    
 
     &-about            
-        background: #480b6b  
-    
+
+        &-title
+            color: white
+        &-text
+            color: white
     &-project
         background: #151849
 
