@@ -1,7 +1,7 @@
 const projects = [
   {
     text: "stonk",
-    url: "https://github.com/AnujSharma141/stonk",
+    url: "https://stonk.js.org/",
     image: "https://i.ibb.co/kK1Hh1L/Group-2.png",
     description:
       "command line tool to monitor indian stocks data stocks watchlists.",
@@ -10,7 +10,7 @@ const projects = [
   },
   {
     text: "reactsearch",
-    url: "https://github.com/AnujSharma141/reactsearch",
+    url: "https://reactsearch.js.org/",
     description:
       "NPM package to create React search input component.",
     image: "https://i.ibb.co/h7q1vDt/Group-1.png",
@@ -28,7 +28,7 @@ const projects = [
   },
   {
     text: "kaizen",
-    url: "https://github.com/AnujSharma141/Kaizen",
+    url: "https://apikaizen.herokuapp.com/",
     description:
       "anime data API made over a GraphQL server by scraping web.",
     image: "https://i.ibb.co/5xJ18xT/Image-2.png",  
