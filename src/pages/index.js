@@ -1,48 +1,35 @@
 import * as React from "react"
 import { useState } from "react"
 import Switch from "react-switch"
-import Fade from 'react-reveal/Fade'
-import Rotate from 'react-reveal/Rotate'
-import Swing from 'react-reveal/Swing';
-
 
 import projects from "../data/projects"
 import social from "../data/social"
-import about from '../data/about'
+
+import Emoji from '../components/emoji'
 
 import '../style/base.sass'
 
-import logo from "../images/logo.svg"
-import wave from "../images/waving-hand_1f44b.png"
-import laptop from "../images/laptop_1f4bb.png"
-import ruler from "../images/straight-ruler_1f4cf.png"
+import wave from "../images/waving-hand_medium-light-skin-tone_1f44b-1f3fc_1f3fc.png"
 import mail from "../images/envelope_2709-fe0f.png"
+import minecraft from '../images/Image 1.png'
 import heart from "../images/red-heart_2764-fe0f.png"
-import abt from "../images/man-technologist_1f468-200d-1f4bb.png"
+import geek from "../images/man-technologist_1f468-200d-1f4bb.png"
 
 
-const Loader = () => {
-    return(
-        <div className="loader">
-            <img src={logo} className="loader-img" alt="" />    
-        </div>
-    )
-}
+
 
 // markup
 const IndexPage = () => {
-  const [dark, setDark] = useState(false) 
-  const [load, setLoad] = useState(true) 
-  setTimeout(() => {
-      setLoad(false)
-  }, 1700); 
+  const [dark, setDark] = useState(false)  
   const toggleSwitch = () => setDark(!dark)   
 
   return (
     <main className={dark?"dark main":"light main"}>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></link>
       <title>Anuj Sharma</title>
-      {load?<Loader />:
-      <>
+      
       <div className="switch">
       <Switch activeBoxShadow="0 0 0 0" offColor="#DBDBDB" width={28} handleDiameter={13} height={16} onChange={toggleSwitch} uncheckedIcon={null} checkedIcon={null} checked={dark} />
       </div>
@@ -50,23 +37,17 @@ const IndexPage = () => {
       
       
 
-        
-        <div className={dark?"textbox dark-textbox": "textbox"}>
-        <div>
-        <Swing>    
-        <img className="textbox-img" src={wave} alt="" />
-        </Swing>
+        <div className="text-message">heyyyy <Emoji src={wave} /></div>        
         <div className="textbox-wrap">
-          <p className={dark?"textbox-text dark-text": "textbox-text"}>Hey, I am</p>
-          <h3 className={dark?"textbox-title dark-title": "textbox-title"}>Anuj Sharma</h3>
+          <p className={dark?"textbox-text dark-text": "textbox-text"}>im
+          <span className={dark?"textbox-title dark-title": "textbox-title"}>Anuj Sharma</span>
+          i do  </p>
         </div>
-      </div>
-      <Fade top cascade>
+
       <div className="textbox-labels">
-      <div className={dark?"textbox-label label-orange dark-label-orange": "textbox-label label-orange"}>Javascript Developer</div>
-      <div className={dark?"textbox-label label-green dark-label-green": "textbox-label label-green"}>UI Designer</div>
-      </div>
-      </Fade>
+      <div className={dark?"textbox-label label-orange dark-label-orange": "textbox-label label-orange"}>Javascript Dev</div>
+      
+      <div className={dark?"textbox-label label-green dark-label-green": "textbox-label label-green"}>UI Design</div>
       </div>  
           
      
@@ -75,55 +56,38 @@ const IndexPage = () => {
 
 
     <div className={dark?"about dark-about": "about"}>
-    <img src={abt} className="about-img" alt="" />
-    <h2 className={dark?"about-title dark-about-title": "about-title"}>About</h2>
-    <p className={dark?"about-text dark-about-text": "about-text"}>{about}</p>
+    <p className={dark?"about-text dark-about-text": "about-text"}>
+     im in my prefinal year studying<br /> 
+      <span className={dark?"about-text dark-about-text": "about-text-black"}>communication and computer engineering.</span> <br />
+     i like to read about web tech and i absolutely <Emoji src={heart} /> javascript <br />
+     also i play <Emoji src={minecraft} /> or watch some anime when free ;p 
+    </p>
     </div>
     
     <div className={dark?"project dark-project": "project"}>
-    <h2 className={dark?"project-heading dark-title": "project-heading"}>Projects</h2>
+    <h2 className={dark?"project-heading dark-title": "project-heading"}>some of my projects <Emoji src={geek} /></h2>
     {projects.map(item=>{
       return<>
-      <div className="project-item" style={{background: dark?item.button:item.color}}>
-        <img className="project-img" src={item.image} alt="" />
+      <div className="project-item">
         <div className="project-counter" >
           <h4 className={dark?"project-title dark-title": "project-title"}>{item.text}</h4>
           <p className={dark?"project-text dark-text": "project-text"}>{item.description}</p>
-          <a target="blank" className={dark?"project-button dark-context": "project-button"} style={{background: dark?item.color:item.button}} href={item.url}>view</a>
         </div>
       </div>
       </>
     })}
     </div>
 
-    <div className={dark?"contact dark-contact": "contact"}>
-    <img className="contact-img" src={mail} alt="" />
-    <h2 className={dark?"contact-title dark-title": "contact-title"}>connect with me!</h2>
-    <p className="contact-text">feel free to drop a mail </p>
-    <div className="contact-social">
-    <a className="contact-mail" href="mailto:anujsharma76757@gmail.com">email</a>
-    <div className="contact-social-links">
-    {social.map(item =>{    
-      return(
-        <>
-        <a target="blank" className="contact-social-link" href={item.link}>
-            <img className="contact-social-icon"  src={item.icon} alt="" />
-        </a> 
-        </>
-      )
-    })}
-    </div>
-    </div>
+    <div className="social">
+      <h3 className="social-title">hmu ill respond for sure <Emoji src={mail} /></h3>
+      <div>{social.map(item=>{
+        return(
+          <><a className="social-link" href={item.link}>{item.name}</a></>
+        )
+        
+      })}</div>
     </div>
 
-    <p className="credit">
-    <span className="credit-text">made with</span>
-    <img className="credit-icon" src={heart} alt="" />
-    <span className="credit-text">by</span>
-    <span className={dark?"credit-name dark-credit-name": "credit-name"}>Anuj Sharma</span>
-    </p>
-
-      </>}
       
     </main>
   )

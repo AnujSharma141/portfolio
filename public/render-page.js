@@ -1651,7 +1651,7 @@ var plugins = [{
     "cache_busting_mode": "query",
     "crossOrigin": "anonymous",
     "include_favicon": true,
-    "cacheDigest": "54d3fec8b600f1085cc3a52339461258"
+    "cacheDigest": "30d18771e50d7ac17d49dcde65ccc20c"
   }
 }];
 /* global plugins */
@@ -8709,24 +8709,24 @@ if (false) {} else {
 /***/ }),
 
 /***/ "react-dom/server":
-/*!****************************************************************************************!*\
-  !*** external "D:\\React\\resume\\dev\\portfolio\\node_modules\\react-dom\\server.js" ***!
-  \****************************************************************************************/
+/*!***************************************************************************!*\
+  !*** external "D:\\React\\portfolio\\node_modules\\react-dom\\server.js" ***!
+  \***************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("D:\\React\\resume\\dev\\portfolio\\node_modules\\react-dom\\server.js");
+module.exports = require("D:\\React\\portfolio\\node_modules\\react-dom\\server.js");
 
 /***/ }),
 
 /***/ "react":
-/*!***********************************************************************************!*\
-  !*** external "D:\\React\\resume\\dev\\portfolio\\node_modules\\react\\index.js" ***!
-  \***********************************************************************************/
+/*!**********************************************************************!*\
+  !*** external "D:\\React\\portfolio\\node_modules\\react\\index.js" ***!
+  \**********************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("D:\\React\\resume\\dev\\portfolio\\node_modules\\react\\index.js");
+module.exports = require("D:\\React\\portfolio\\node_modules\\react\\index.js");
 
 /***/ }),
 
