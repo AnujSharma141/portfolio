@@ -70,7 +70,7 @@ const IndexPage = () => {
       return<>
       <div className="project-item">
         <div className="project-counter" >
-          <h4 className={dark?"project-title dark-title": "project-title"}>{item.text}</h4>
+          <a href={item.url} className={dark?"project-title dark-title": "project-title"}>{item.text}</a>
           <p className={dark?"project-text dark-text": "project-text"}>{item.description}</p>
         </div>
       </div>
