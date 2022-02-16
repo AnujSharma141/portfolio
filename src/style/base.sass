@@ -85,18 +85,38 @@ body::-webkit-scrollbar-thumb
         width: 2.5vw   
         margin: 5vw 0vw 0 0vw 
     &-title     
-        margin: 0 1vw
-        @include text($weight: 600, $color: black, $size: 2.3vw)
+        margin: 0 0.75vw
+        @include text($weight: 600, $color: black, $size: 1.35vw)
     &-labels
-        @include flex($prop: row, $align: flex-end, $justify: flex-start)
+        @include flex($prop: row, $align: center, $justify: flex-start)
         margin: 1vw 0vw
     &-label
         font-size: 1vw
-        padding: 1vw 2vw
+        padding: 0.5vw 1vw
         border-radius: 0.6vw     
-        margin: 0.75vw 0.75vw 0 0 
+        margin: 0vw 0.8vw 0vw 0.8vw 
+
+.link-work
+    color: black
+    outline: none
+    text-decoration: none
+    &:hover
+        color: blue
             
-        
+.work
+    width: 40vw
+    border-radius: 4vw
+    margin: 2vw 25vw
+    padding: 2vw 0vw  1vw 0
+    color:   #adadad
+
+.work-heading
+        text-decoration: none
+        font-weight: 400
+        font-size: 1.2vw
+        color: #949494
+        margin: 1vw 0 0 0 
+
 .about
     width: 40vw
     border-radius: 4vw
@@ -367,7 +387,9 @@ body::-webkit-scrollbar-thumb
         &-labels
             margin: 0
             display: flex
-            align-items: flex-start    
+            
+            flex-wrap: wrap
+            align-items: center    
             margin-left: 10vw
             margin-top: 5vw
         &-label
@@ -375,7 +397,23 @@ body::-webkit-scrollbar-thumb
             padding: 3vw 5vw
             background: #f0f0f0
             border-radius: 1.9vw     
-            margin: 2vw 1vw    
+            margin: 2vw 10vw 2vw 3vw   
+
+    .work-heading
+        margin-left: 10vw
+        font-size: 5vw
+        margin-top: 4vw
+        width: 70vw
+        margin-bottom: 0vw    
+
+    .work
+        width: 90vw
+        height: auto
+        margin-left: 0vw
+        border-radius: 7vw
+        font-size: 5vw
+        margin-top: 14vw
+        
     .about
         width: 90vw
         height: auto
@@ -384,7 +422,7 @@ body::-webkit-scrollbar-thumb
         margin-top: 18vw
         &-img
             width: 15vw
-            margin-left: 10vw
+            
         &-title
             font-size: 13vw 
             margin: 6vw 8vw 3vw 10vw
