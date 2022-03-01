@@ -35,68 +35,61 @@ const IndexPage = () => {
       <div className="switch">
       <Switch activeBoxShadow="0 0 0 0" offColor="#DBDBDB" width={28} handleDiameter={13} height={16} onChange={toggleSwitch} uncheckedIcon={null} checkedIcon={null} checked={dark} />
       </div>
+
       <div className={dark?"land dark-land": "land"}>
-      
-      
-
-        <div className="text-message">heyyyy <Emoji src={wave} /></div>        
-        <div className="textbox-wrap">
-          <p className={dark?"textbox-text dark-text": "textbox-text"}>im
-          <span className={dark?"textbox-title dark-title": "textbox-title"}>anuj sharma</span>
-          </p>
-        </div>
-<h2 className={dark?"work-heading dark-title": "work-heading"}>a tech intern @ <a target="_blank" className={dark?"link-work dark-about-text": "link-work"} href="https://www.quidich.com/" > Quidich</a> <Emoji src={gear} /></h2>
-    
-      
-          
-     
-      
-    </div>
-
-    <div className={dark?"work dark-about": "work"}>
-
-      <div className="textbox-labels"> i am a 
-      <div className={dark?"textbox-label label-orange dark-label-orange": "textbox-label label-orange"}>Javascript Developer</div>
-      and
-      <div className={dark?"textbox-label label-green dark-label-green": "textbox-label label-green"}>UI Designer</div>
-      </div>  
-    </div>
-    
-    <div className={dark?"about dark-about": "about"}>
-    <p className={dark?"about-text dark-about-text": "about-text"}>
-     im in my prefinal year studying <Emoji src={student} /><br /> 
-      <span className={dark?"about-text dark-about-text": "about-text-black"}>communication and computer engineering . </span> <br />
-     i like to read about web tech and i absolutely <Emoji src={heart} /> javascript <br />
-     also i play <Emoji src={minecraft} /> or watch some anime when free ;p 
-    </p>
-    </div>
-    
-
-    <div className={dark?"project dark-project": "project"}>
-    <h2 className={dark?"project-heading dark-title": "project-heading"}>some of my projects <Emoji src={geek} /></h2>
-    {projects.map(item=>{
-      return<>
-      <div className="project-item">
-        <div className="project-counter" >
-          <a href={item.url} className={dark?"project-title dark-title": "project-title"}>{item.text}</a>
-          <p className={dark?"project-text dark-text": "project-text"}>{item.description}</p>
-        </div>
+      <div className="text-message">heyyyy <Emoji style='emoji' src={wave} /></div> 
+             
+      <div className="textbox-wrap">
+        <p className={dark?"textbox-text dark-text": "textbox-text"}>im
+        <span className={dark?"textbox-title dark-title": "textbox-title"}>anuj sharma</span>
+        </p>
       </div>
-      </>
-    })}
-    </div>
 
-    <div className="social">
-      <h3 className="social-title">hmu ill respond for sure <Emoji src={mail} /></h3>
-      <div>{social.map(item=>{
-        return(
-          <><a className="social-link" href={item.link}>{item.name}</a></>
-        )
-        
-      })}</div>
-    </div>
+      <h2 className={dark?"work-heading dark-title": "work-heading"}>a tech intern @ <a target="_blank" className={dark?"link-work dark-about-text": "link-work"} href="https://www.quidich.com/" > Quidich</a> 
+      <Emoji src={gear} /></h2>
+      </div>
 
-      
+      <div className={dark?"work dark-about": "work"}>
+        <div className="textbox-labels"> i am a 
+        <div className={dark?"textbox-label label-orange dark-label-orange": "textbox-label label-orange"}>Javascript Developer</div>
+        and
+        <div className={dark?"textbox-label label-green dark-label-green": "textbox-label label-green"}>UI Designer</div>
+        </div>  
+      </div>
+    
+      <div className={dark?"about dark-about": "about"}>
+      <p className={dark?"about-text dark-about-text": "about-text"}>
+      im in my prefinal year studying <Emoji src={student} /><br /> 
+        <span className={dark?"about-text dark-about-text": "about-text-black"}>communication and computer engineering </span> <br />
+      i like to read about web tech and i absolutely <Emoji src={heart} /> javascript <br />
+      also i play <a target="_blank" href="https://minecraft.net"><Emoji src={minecraft} /></a> or watch some anime when free ;p 
+      </p>
+      </div>
+    
+
+      <div className={dark?"project dark-project": "project"}>
+      <h2 className={dark?"project-heading dark-title": "project-heading"}>some of my projects <Emoji src={geek} /></h2>
+      {projects.map(item=>{
+        return<>
+        <div className="project-item">
+          <div className="project-counter" >
+            <a href={item.url} target="_blank" className={dark?"project-title dark-title": "project-title"}>{item.text}</a>
+            <p className={dark?"project-text dark-text": "project-text"}>{item.description}</p>
+          </div>
+        </div>
+        </>
+      })}
+      </div>
+
+      <div className="social">
+        <h3 className="social-title">hmu ill respond for sure <Emoji src={mail} /></h3>
+        <div>{social.map(item=>{
+          return(
+            <><a className="social-link" target="_blank" href={item.link}>{item.name}</a></>
+          )
+          
+        })}</div>
+      </div>
     </main>
   )
 }
