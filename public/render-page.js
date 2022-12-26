@@ -8710,23 +8710,23 @@ if (false) {} else {
 
 /***/ "react-dom/server":
 /*!***************************************************************************!*\
-  !*** external "D:\\React\\portfolio\\node_modules\\react-dom\\server.js" ***!
+  !*** external "D:\\react\\portfolio\\node_modules\\react-dom\\server.js" ***!
   \***************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("D:\\React\\portfolio\\node_modules\\react-dom\\server.js");
+module.exports = require("D:\\react\\portfolio\\node_modules\\react-dom\\server.js");
 
 /***/ }),
 
 /***/ "react":
 /*!**********************************************************************!*\
-  !*** external "D:\\React\\portfolio\\node_modules\\react\\index.js" ***!
+  !*** external "D:\\react\\portfolio\\node_modules\\react\\index.js" ***!
   \**********************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("D:\\React\\portfolio\\node_modules\\react\\index.js");
+module.exports = require("D:\\react\\portfolio\\node_modules\\react\\index.js");
 
 /***/ }),
 

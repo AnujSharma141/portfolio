@@ -78,18 +78,19 @@ body::-webkit-scrollbar-thumb
     border-radius: 2.2vw
     @include flex($prop: row, $align: normal, $justify: normal)
     &-text
-        @include text($weight: 300, $color: #adadad , $size: 1.2vw)  
-        margin: 3vw 0 0 0vw       
-        
+        @include text($weight: 300, $color: #adadad , $size: 1.05em)  
+        margin: 2vw 0 0 0vw       
+    
     &-img
         width: 2.5vw   
         margin: 5vw 0vw 0 0vw 
     &-title     
         margin: 0 0.75vw
-        @include text($weight: 600, $color: black, $size: 1.35vw)
+        @include text($weight: 500, $color: black, $size: 1.1em)
     &-labels
         @include flex($prop: row, $align: center, $justify: flex-start)
-        margin: 1vw 0vw
+        margin: 0vw 0vw
+        font-size: 1.05em
     &-label
         font-size: 1vw
         padding: 0.5vw 1vw
@@ -106,8 +107,8 @@ body::-webkit-scrollbar-thumb
 .work
     width: 40vw
     border-radius: 4vw
-    margin: 2vw 25vw
-    padding: 2vw 0vw  1vw 0
+    margin: 0vw 25vw
+    padding: 1vw 0vw  1vw 0
     color:   #adadad
 
 .work-heading
@@ -125,7 +126,7 @@ body::-webkit-scrollbar-thumb
 
     &-text
         line-height: 2.84vw
-        font-size: 1.2vw
+        font-size: 1em
         margin: 1vw 0vw
         color: #8d8d8dcb 
 
@@ -153,14 +154,14 @@ body::-webkit-scrollbar-thumb
     &-item
         @include flex($prop: row, $align: center , $justify: normal)
         border-radius: 3vw
-        margin: 2vw 0 0 0
+        margin: 1vw 0 0 0
     &-img
         width: 25vw     
         margin: 0 5vw 0 6vw 
         border-radius: 1vw
     &-title
-        font-size: 1.4vw
-        font-weight: 600
+        font-size: 1.1em
+        font-weight: 500
         margin: 2vw 0 0 0
         text-decoration: none
         color: black
@@ -168,8 +169,8 @@ body::-webkit-scrollbar-thumb
             color: blue
     &-text
         line-height: 2.2vw
-        margin: 1vw 0 2vw 
-        @include text($weight: 300, $color: #949494, $size: 1.2vw)
+        margin: 0.5vw 0 0vw 
+        @include text($weight: 300, $color: #949494, $size: 0.94em)
     &-button 
         color: #3937df
         text-decoration: underline 1px blue     
@@ -177,8 +178,12 @@ body::-webkit-scrollbar-thumb
         border-radius: 0.86vw
         text-decoration: none 
 
- 
-            
+.exp-text
+    @include text($weight: 300, $color: #000000, $size: 1em)
+    margin-top: 3vw
+.exp-subtext
+    @include text($weight: 300, $color: #949494, $size: 0.9em)
+         
 
 .contact
     background: white
@@ -206,6 +211,7 @@ body::-webkit-scrollbar-thumb
             @include flex($prop: row, $align: center, $justify: normal)
         &-link
             margin: 0 0 0 2.5vw   
+            font-size: 1em
         &-icon
             width: 1.4vw    
             fill: #afafaf
@@ -225,7 +231,7 @@ body::-webkit-scrollbar-thumb
     margin-left: 25vw
     margin-bottom: 7vw
     &-title
-        font-weight: 500
+        font-weight: 400
         margin-bottom: 3vw
         font-size: 1.2vw
         color: #8d8d8dcb 
@@ -253,7 +259,7 @@ body::-webkit-scrollbar-thumb
 
 // dark mode    
 .dark
-    background: #060b24 
+    background: #00020a 
     &-title
         color: white
     &-text
@@ -262,8 +268,8 @@ body::-webkit-scrollbar-thumb
         color: black      
 
     &-textbox
-        background: #13174b
-        box-shadow: 0 0 3vw #121727
+        background: #00020a
+
 
     &-label-orange
         background: #C9602E !important
@@ -273,7 +279,7 @@ body::-webkit-scrollbar-thumb
         color: #C7FFCE                
           
     &-graphic
-        background: #0d1c47    
+        background: #00020a    
         
     &-elipse-blue
         background: #1d376e    
@@ -287,7 +293,7 @@ body::-webkit-scrollbar-thumb
         &-text
             color: white
     &-project
-        background: #060b24
+        background: #00020a
 
     &-contact
         background: #13174b      
@@ -295,7 +301,16 @@ body::-webkit-scrollbar-thumb
 
     &-credit-name
         color: white
-                            
+
+    &-link
+        color: white
+        &:hover
+            color: #407cff
+
+.pfp
+    width: 10vw
+    border-radius: 0.7vw
+    margin-top: 8vw
 
 .loader
     @include flex($prop: column, $align: center, $justify: center)
@@ -347,11 +362,11 @@ body::-webkit-scrollbar-thumb
         position: absolute 
 
     .label-green
-        margin: 0
+        margin-left: 0 
        
     .label-orange
        
-        margin: 20vw 0 0 0 
+        margin-right: 2vw !important    
        
     img
         width: 4.6vw !important
@@ -388,9 +403,10 @@ body::-webkit-scrollbar-thumb
             margin-left: 10vw
             margin-top: 5vw
         &-text
-            font-size: 4.7vw
+            font-size: 1em
+            margin-top: 12vw
         &-title
-            font-size: 5.7vw
+            font-size: 1.1em
             margin-top: 3vw
             margin-left: 2vw
         &-labels
@@ -400,7 +416,8 @@ body::-webkit-scrollbar-thumb
             flex-wrap: wrap
             align-items: center    
             margin-left: 10vw
-            margin-top: 5vw
+            width: 60%
+            margin-top: 3vw
         &-label
             font-size: 3.8vw
             padding: 2vw 3.5vw
@@ -410,7 +427,7 @@ body::-webkit-scrollbar-thumb
 
     .work-heading
         margin-left: 10vw
-        font-size: 5vw
+        font-size: 1em
         margin-top: 4vw
         width: 70vw
         margin-bottom: 0vw    
@@ -420,8 +437,9 @@ body::-webkit-scrollbar-thumb
         height: auto
         margin-left: 0vw
         border-radius: 7vw
-        font-size: 4.7vw
-        margin-top: 14vw
+        padding-top: 0vw
+        font-size: 1em
+        margin-top: 2vw
         
     .about
         width: 90vw
@@ -438,8 +456,8 @@ body::-webkit-scrollbar-thumb
              
         &-text
             margin: 0 10vw
-            width: 75%
-            font-size: 4.7vw
+            width: 87%
+            font-size: 1em
             line-height: 10vw    
     .project
         padding-bottom: 10vw
@@ -454,7 +472,7 @@ body::-webkit-scrollbar-thumb
         &-item
             flex-direction: column
             width: 80vw 
-            margin: 4vw 0
+            margin: 0vw 0
             height: auto
             align-items: flex-start
             border-radius: 7vw
@@ -465,12 +483,12 @@ body::-webkit-scrollbar-thumb
             margin-bottom: 0vw
             height: auto
         &-title
-            font-size: 5.7vw    
+            font-size: 1.1em !important  
         &-text
-            font-size: 4.7vw
+            font-size: 4vw
             width: 60vw   
             line-height: 8vw   
-            margin-top: 5vw             
+            margin-top: 3vw             
         &-button
             font-size: 3vw
             padding: 3vw 4vw
@@ -516,10 +534,18 @@ body::-webkit-scrollbar-thumb
         &-img
             width: 70vw        
     .social
-        margin: 10vw 0 20vw 10vw
+        margin: 20vw 0 20vw 10vw
         &-title
             font-size: 4.7vw
             margin-bottom: 8vw
         &-link
-            font-size: 5vw
+            font-size: 4.3vw
             margin-right: 6vw
+    
+    .pfp 
+        width: 40vw !important
+        height: auto !important
+        border-radius: 3vw
+        margin-top: 13vw !important
+    .exp-item
+        margin-top: 6vw
