@@ -1514,7 +1514,7 @@ var plugins = [{
     "short_name": "Reactgo",
     "start_url": "/",
     "background_color": "#f7f0eb",
-    "theme_color": "#a2466c",
+    "theme_color": "#fff",
     "display": "standalone",
     "icon": "src/images/logo.svg",
     "legacy": true,
