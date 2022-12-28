@@ -78,21 +78,21 @@ body::-webkit-scrollbar-thumb
     border-radius: 2.2vw
     @include flex($prop: row, $align: normal, $justify: normal)
     &-text
-        @include text($weight: 300, $color: #adadad , $size: 1.05em)  
-        margin: 2vw 0 0 0vw       
+        @include text($weight: 300, $color: #adadad , $size: 1em)  
+        margin: 3vw 0 0 0vw       
     
     &-img
         width: 2.5vw   
         margin: 5vw 0vw 0 0vw 
     &-title     
         margin: 0 0.75vw
-        @include text($weight: 500, $color: black, $size: 1.1em)
+        @include text($weight: 500, $color: black, $size: 1em)
     &-labels
         @include flex($prop: row, $align: center, $justify: flex-start)
         margin: 0vw 0vw
-        font-size: 1.05em
+        font-size: 1em
     &-label
-        font-size: 1vw
+        font-size: 0.9em
         padding: 0.5vw 1vw
         border-radius: 0.6vw     
         margin: 0vw 0.8vw 0vw 0.8vw 
@@ -114,7 +114,7 @@ body::-webkit-scrollbar-thumb
 .work-heading
         text-decoration: none
         font-weight: 400
-        font-size: 1.2vw
+        font-size: 1em
         color: #949494
         margin: 1vw 0 0 0 
 
@@ -144,7 +144,7 @@ body::-webkit-scrollbar-thumb
     &-heading
         text-decoration: none
         font-weight: 400
-        font-size: 1.2vw
+        font-size: 1em
         color: #949494
         margin: 1vw 0 0 0 
     &-counter
@@ -233,13 +233,12 @@ body::-webkit-scrollbar-thumb
     &-title
         font-weight: 400
         margin-bottom: 3vw
-        font-size: 1.2vw
+        font-size: 1em
         color: #8d8d8dcb 
     &-link
         margin-right: 4vw
         color: blue
         outline: none
-        text-decoration: none
         &:hover
             color: black
 
@@ -308,9 +307,9 @@ body::-webkit-scrollbar-thumb
             color: #407cff
 
 .pfp
-    width: 10vw
+    width: 9vw
     border-radius: 10vw
-    margin-top: 8vw
+    margin-top: 7vw
 
 .loader
     @include flex($prop: column, $align: center, $justify: center)
