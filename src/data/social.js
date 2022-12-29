@@ -13,7 +13,7 @@ const social = [{
     name: "github"
 },
 {
-    link: "https://twitter.com/whoisanujsharma",
+    link: "https://twitter.com/itsnotrika",
     icon: twitter,
     name: "twitter"
 },{
