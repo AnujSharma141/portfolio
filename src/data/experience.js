@@ -1,7 +1,7 @@
 const experience = [
     { name: "quillbot", 
     role: "ui dev intern", 
-    duration: "joining from jan 2023 ", 
+    duration: "jan 2023 - present", 
     link: "https://quillbot.com" }, 
 
     { name: "quidich", 
