@@ -10,16 +10,13 @@ import Emoji from '../components/emoji'
 
 import '../style/base.sass'
 
-import wave from "../images/waving-hand_medium-light-skin-tone_1f44b-1f3fc_1f3fc.png"
 import mail from "../images/envelope_2709-fe0f.png"
-import minecraft from '../images/Image 1.png'
 import heart from "../images/red-heart_2764-fe0f.png"
 import geek from "../images/man-technologist_1f468-200d-1f4bb.png"
 import student from "../images/man-student_1f468-200d-1f393.png"
-import gear from "../images/gear_2699-fe0f.png"
 import work from '../images/necktie_1f454.png'
 import pfp from '../images/1232.png'
-
+import valorant from '../images/val-icon.png'
 
 // markup
 const IndexPage = () => {
@@ -67,7 +64,7 @@ const IndexPage = () => {
       im in my final year studying <Emoji src={student} /><br /> 
         <span className={dark?"about-text-black dark-about-text": "about-text-black"}>communication and computer engineering </span> <br />
       i like to read about web technologies and i absolutely <Emoji src={heart} /> javascript <br />
-      also i play <a target="_blank" href="https://minecraft.net"><Emoji src={minecraft} /></a> or watch some anime when free ;p 
+      also i play <a target="_blank" href="https://playvalorant.com/en-gb/"><Emoji src={valorant} /></a> or watch some anime when free ;p 
       </p>
       </div>
     
