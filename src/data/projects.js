@@ -1,7 +1,7 @@
 const projects = [
   {
     text: "kaizen",
-    url: "https://apikaizen.herokuapp.com/",
+    url: "https://kaizen-api-ju41.onrender.com/",
     description:
       "anime data API built over graphQL",
     image: "https://i.ibb.co/5xJ18xT/Image-2.png",  
