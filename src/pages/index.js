@@ -34,21 +34,14 @@ const IndexPage = () => {
       <Switch activeBoxShadow="0 0 0 0" offColor="#DBDBDB" width={28} handleDiameter={13} height={16} onChange={toggleSwitch} uncheckedIcon={null} checkedIcon={null} checked={dark} />
       </div>
 
-      <div className={dark?"land dark-land": "land"}>
-      {/* <div className="text-message">heyyyy <Emoji style='emoji' src={wave} /></div>  */}
-             
+      <div className={dark?"land dark-land": "land"}>     
       <div className="textbox-wrap">
         <img src={pfp} className='pfp' alt="" />
         <p className={dark?"textbox-text dark-text": "textbox-text"}>hey there, im
         <span className={dark?"textbox-title dark-title": "textbox-title"}>anuj sharma</span>
+        (he/him)
         </p>
-        
       </div>
-
-
-
-      {/* <h2 className={dark?"work-heading dark-title": "work-heading"}>a tech intern @ <a target="_blank" className={dark?"link-work dark-about-text": "link-work"} href="https://www.quidich.com/" > Quidich</a> 
-      <Emoji src={gear} /></h2> */}
       </div>
 
       <div className={dark?"work dark-about": "work"}>
@@ -59,35 +52,36 @@ const IndexPage = () => {
         </div>  
       </div>
     
+
       <div className={dark?"about dark-about": "about"}>
       <p className={dark?"about-text dark-about-text": "about-text"}>
-      im in my final year studying <Emoji src={student} /><br /> 
-        <span className={dark?"about-text-black dark-about-text": "about-text-black"}>communication and computer engineering </span> <br />
+      recently graduated in <br /> 
+        <span className={dark?"about-text-black dark-about-text": "about-text-black"}>communication and computer engineering </span> <Emoji src={student} /> <br />
       i like to read about web technologies and i absolutely <Emoji src={heart} /> javascript <br />
       also i play <a target="_blank" href="https://playvalorant.com/en-gb/"><Emoji src={valorant} /></a> or watch some anime when free ;p 
       </p>
       </div>
     
+
       <div className={dark?"project dark-project": "project"}>
-      <h2 className={dark?"project-heading dark-title": "project-heading"}>work experience <Emoji src={work} /></h2>
+      <h2 className={dark?"project-heading dark-title": "project-heading"}>work experience<Emoji src={work} /></h2>
       {experience.map(item=>{
-        return<>
+        return<div className="exp-item"> 
         <div className="exp-item">
           <div className="exp-counter" >
             <p className={dark?"exp-text dark-title": "exp-text"}>{item.role} @
             <a target="#" href={item.link} className={dark?"exp-text dark-link": "exp-text"}>{item.name}</a>
             </p>
             <p className={dark?"exp-subtext dark-text": "exp-subtext"}>{item.duration}</p>
-
           </div>
         </div>
-        </>
+        </div>
       })}
       </div>
 
 
       <div className={dark?"project dark-project": "project"}>
-      <h2 className={dark?"project-heading dark-title": "project-heading"}>projects <Emoji src={geek} /></h2>
+      <h2 className={dark?"project-heading dark-title": "project-heading"}>projects<Emoji src={geek} /></h2>
       {projects.map(item=>{
         return<>
         <div className="project-item">
@@ -102,7 +96,7 @@ const IndexPage = () => {
 
       <div className="social">
         <h3 className="social-title">hmu ill respond for sure <Emoji src={mail} /></h3>
-        <div>{social.map(item=>{
+        <div className="social-links">{social.map(item=>{
           return(
             <><a className={dark?"social-link dark-link": "social-link"} target="_blank" href={item.link}>{item.name}</a></>
           )

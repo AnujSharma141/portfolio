@@ -20,6 +20,11 @@ const social = [{
     link: "https://www.linkedin.com/in/anujsharma141/",
     icon: linkedin,
     name: "linkedin"
+},
+{
+    link: "https://drive.google.com/file/d/1EdhWxvqh5pgg3xgdXZIKijNr4hnphb2A/view",
+    icon: linkedin,
+    name: "resume"
 }]
 
 export default social

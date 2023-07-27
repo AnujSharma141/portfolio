@@ -78,7 +78,7 @@ body::-webkit-scrollbar-thumb
     border-radius: 2.2vw
     @include flex($prop: row, $align: normal, $justify: normal)
     &-text
-        @include text($weight: 300, $color: #adadad , $size: 1em)  
+        @include text($weight: 400, $color: #adadad , $size: 1em)  
         margin: 3vw 0 0 0vw       
     
     &-img
@@ -96,6 +96,7 @@ body::-webkit-scrollbar-thumb
         padding: 0.5vw 1vw
         border-radius: 0.6vw     
         margin: 0vw 0.8vw 0vw 0.8vw 
+        font-weight: 500
 
 .link-work
     color: black
@@ -143,7 +144,7 @@ body::-webkit-scrollbar-thumb
     background: white      
     &-heading
         text-decoration: none
-        font-weight: 400
+        font-weight: 500
         font-size: 1em
         color: #949494
         margin: 1vw 0 0 0 
@@ -169,8 +170,8 @@ body::-webkit-scrollbar-thumb
             color: blue
     &-text
         line-height: 2.2vw
-        margin: 0.5vw 0 0vw 
-        @include text($weight: 300, $color: #949494, $size: 0.94em)
+        margin: 0.25vw 0 0vw 
+        @include text($weight: 400, $color: #949494, $size: 0.94em)
     &-button 
         color: #3937df
         text-decoration: underline 1px blue     
@@ -179,11 +180,18 @@ body::-webkit-scrollbar-thumb
         text-decoration: none 
 
 .exp-text
-    @include text($weight: 300, $color: #000000, $size: 1em)
+    @include text($weight: 500, $color: #000000, $size: 1em)
     margin-top: 3vw
+    margin-bottom: 0vw
 .exp-subtext
-    @include text($weight: 300, $color: #949494, $size: 0.9em)
-         
+    @include text($weight: 400, $color: #949494, $size: 0.8em)
+    margin-top: 0.75vw
+.exp-item
+    @include flex($prop: row, $align: center, $justify: flex-start)
+.exp-logo
+    margin-top: 2.2vw
+    width: 2.5vw 
+    margin-right: 1.2vw
 
 .contact
     background: white
@@ -459,8 +467,8 @@ body::-webkit-scrollbar-thumb
             font-size: 1em
             line-height: 10vw    
     .project
-        padding-bottom: 10vw
-        margin-top: 24vw
+        padding-bottom: 0vw
+        margin-top: 20vw
         margin-left: 10vw
         width: 70vw
         &-heading
@@ -547,4 +555,17 @@ body::-webkit-scrollbar-thumb
         border-radius: 30vw
         margin-top: 13vw !important
     .exp-item
-        margin-top: 6vw
+        margin-top: 3vw
+
+    .exp-logo
+        margin-top: 2vw !important
+        width: 10vw !important
+        height: 10vw !important
+        margin-right: 4.2vw !important
+    .exp-subtext
+        margin-top: 2vw
+    .social-links
+        display: flex
+        flex-wrap: wrap
+        width: 70vw
+        height: 24vw
