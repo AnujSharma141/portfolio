@@ -12,7 +12,7 @@ const projects = [
     text: "tralo",
     url: "https://tralo.netlify.app/",
     description:
-      "Frontend of a Real Estate Application.",
+      "frontend of a real estate application.",
     image: "https://i.ibb.co/VmsCrhd/Image-3.png",
     color: "#E8EBFF",
     button: "#2F5B8D",
