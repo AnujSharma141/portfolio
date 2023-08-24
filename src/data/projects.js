@@ -9,19 +9,10 @@ const projects = [
     button: "#AD29A4",
   },
   {
-    text: "pharmacy",
-    url: "https://github.com/AnujSharma141/Pharmacy",
+    text: "tralo",
+    url: "https://tralo.netlify.app/",
     description:
-      "dashboard for a pharmacy store",
-    image: "https://i.ibb.co/VmsCrhd/Image-3.png",
-    color: "#E8EBFF",
-    button: "#2F5B8D",
-  },
-  {
-    text: "lore",
-    url: "https://lorechatapp.web.app/",
-    description:
-      "web based chat application",
+      "Frontend of a Real Estate Application.",
     image: "https://i.ibb.co/VmsCrhd/Image-3.png",
     color: "#E8EBFF",
     button: "#2F5B8D",
