@@ -3,7 +3,7 @@ import api_structure from '../../images/blog/api_structure.png'
 import folder_structure from '../../images/blog/folder_structure.png'
 import testing_request from '../../images/blog/testing_request.png'
 import testing_response from '../../images/blog/testing_response.png'
-import '../style/base.sass'
+import '../../style/base.sass'
 
 export default function graphql() {
 
