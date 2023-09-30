@@ -19,7 +19,7 @@ const projects = [
   },
   {
     text: "kaizen",
-    url: "https://kaizen-api-ju41.onrender.com/",
+    url: "https://kaizenlink.tech/",
     description:
       "anime data API built over graphQL",
     image: "https://i.ibb.co/5xJ18xT/Image-2.png",  
