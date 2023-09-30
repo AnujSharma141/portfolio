@@ -118,7 +118,7 @@ export default function graphql() {
 
     <h3 className='blog-subtitles-sm'>Gathering Data (web crawlers)</h3>
     Now that server is running. We need query functions for each query.<br/>
-    We will crawl data from myanimelist pages by axios request. 
+    <div className='stack-list'>We will crawl data from <a className='blog-link' href='https://myanimelist.net/'>myanimelist</a> pages by axios request. </div>
     <div className='stack-list'>In <span className='filename'>/src/queries/</span> create <span className='filename'>airing.js</span></div> 
     <div className='code-snippet'>
 
@@ -258,6 +258,21 @@ export default function graphql() {
     <span className='units'>{"}"}</span>
     </div> 
     Create all the queries, create resolvers for them and their types as well.<br/> We can use one type for multiple queries. 
+    <div className='stack-list'>Update<span className='filename'>app.js</span></div> 
+    <div className='code-snippet'>
+    <span className='units'>import</span> <span className='keyword'>typeDefs</span>  <span className='units'>from</span> <span className='string'>'src/graphql/schema'</span><br/>
+
+    <span className='units'>import</span> <span className='keyword'>resolvers</span>  <span className='units'>from</span> <span className='string'>'src/graphql/resolver'</span><br/><br/>
+
+    <span className='datatype'>const</span> <span className='keyword'>server</span> = <span className='datatype'>new</span> <span className='class'>ApolloServer</span>{"({"}<br />
+    <span className='keyword'>typeDefs</span>,<br/>
+    <span className='keyword'>resolvers</span>,<br/>
+    <span className='keyword'>playground</span>: <span className='units'>{"{"}</span><br />
+    <span className='keyword'>endpoint</span>: <span className='string'>'/api</span>'<br />
+        <span className='units'>{"}"}</span><br />
+      {"})"}<br /><br />
+
+    </div>
 
     <h2 className='blog-subtitles'>Testing</h2>
     At last we should be having the api running and serving proper.<br/>
@@ -272,7 +287,7 @@ export default function graphql() {
     Have fun with it making creative apps.
     <span className='stack-list'>You can also check <a className='blog-link' href='https://kaizenlink.tech/'> kaizenlink.tech </a> where the API is deployed.</span>
     <br/>
-    Aight uwu ara ara see yall in the next one.
+    Aight Fin.
     </div>
     </div>
     </>
