@@ -1,6 +1,6 @@
 const experience = [
     { name: "Quillbot", 
-    role: "UI Dev (Intern)", 
+    role: "UI Developer (Intern)", 
     duration: "Jan 2023 - July 2023", 
     link: "https://quillbot.com",
     img: "https://asset.brandfetch.io/idEDptjcNN/idCiJQMZYl.png" }, 

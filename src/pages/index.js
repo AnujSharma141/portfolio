@@ -5,6 +5,8 @@ import Switch from "react-switch"
 import projects from "../data/projects"
 import social from "../data/social"
 import experience from '../data/experience'
+import blogs from "../data/blogs"
+
 
 import Emoji from '../components/emoji'
 
@@ -17,6 +19,7 @@ import student from "../images/man-student_1f468-200d-1f393.png"
 import work from '../images/necktie_1f454.png'
 import pfp from '../images/1232.png'
 import valorant from '../images/val-icon.png'
+import blog from '../images/writing-hand_270d-fe0f.png'
 
 // markup
 const IndexPage = () => {
@@ -27,7 +30,7 @@ const IndexPage = () => {
     <main className={dark?"dark main":"light main"}>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></link>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Martian+Mono&display=swap" rel="stylesheet"></link>
       <title>anuj sharma</title>
       
       <div className="switch">
@@ -88,6 +91,19 @@ const IndexPage = () => {
           <div className="project-counter" >
             <a href={item.url} target="_blank" className={dark?"project-title dark-link": "project-title"}>{item.text}</a>
             <p className={dark?"project-text dark-text": "project-text"}>{item.description}</p>
+          </div>
+        </div>
+        </>
+      })}
+      </div>
+
+      <div className={dark?"project dark-project": "project"}>
+      <h2 className={dark?"project-heading dark-title": "project-heading"}>blogs<Emoji src={blog} /></h2>
+      {blogs.map(item=>{
+        return<>
+        <div className="project-item">
+          <div className="project-counter" >
+            <a href={item.link} target="_blank" className={dark?"project-title dark-link": "project-title"}>{item.name}</a>
           </div>
         </div>
         </>
