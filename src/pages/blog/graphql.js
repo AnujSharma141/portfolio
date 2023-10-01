@@ -160,7 +160,7 @@ export default function graphql() {
     <span className='units'>import</span> <span className='keyword'>jsdom</span>  <span className='units'>from</span><span className='string'>"jsdom"</span> <br />
     <span className='datatype'>const</span> {"{"}<span className='class'>JSDOM</span> {"}"} = <span className='class'>jsdom</span><br /><br/>
   
-    <span className='datatype'>const</span> <span className='class'>Item</span>  <span className='units'>{"{"}</span><br />
+    <span className='datatype'>class</span> <span className='class'>Item</span>  <span className='units'>{"{"}</span><br />
     <span className='datatype'>constructor</span>(<span className='keyword'>data</span>) <span className='units'>{"{"}</span><br />
     
     <span className='datatype'>this</span>.<span className='keyword'>src</span> =   <span className='datatype'>new</span> <span className='class'>JSDOM</span><span className='keyword'>(data)</span><br />
