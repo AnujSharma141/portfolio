@@ -12,7 +12,7 @@ const projects = [
     text: "dashboard",
     url: "https://springbootreact.netlify.app/",
     description:
-      "dashboard made with spring boot, react and postgreSQL.",
+      "made with spring boot, react and postgreSQL.",
     image: "https://i.ibb.co/VmsCrhd/Image-3.png",
     color: "#E8EBFF",
     button: "#2F5B8D",
