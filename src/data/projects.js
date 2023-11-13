@@ -12,7 +12,7 @@ const projects = [
     text: "care",
     url: "https://care-lac.vercel.app/",
     description:
-      "injury tracking dashboard made with Next, Prisma, Auth0  and GraphQL.",
+      "injury tracking dashboard made with next, prisma, and graphql.",
     image: "https://i.ibb.co/VmsCrhd/Image-3.png",
     color: "#E8EBFF",
     button: "#2F5B8D",
@@ -30,7 +30,7 @@ const projects = [
     text: "kaizen",
     url: "https://kaizenlink.tech/",
     description:
-      "anime data API built over graphQL.",
+      "anime data API built over graphql.",
     image: "https://i.ibb.co/5xJ18xT/Image-2.png",  
     color: "#FFE3DC",
     button: "#C97726",
