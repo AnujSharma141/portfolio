@@ -9,10 +9,10 @@ const projects = [
     button: "#AD29A4",
   },
   {
-    text: "dashboard",
-    url: "https://springbootreact.netlify.app/",
+    text: "care",
+    url: "https://care-lac.vercel.app/",
     description:
-      "made with spring boot, react and postgreSQL.",
+      "injury tracking dashboard made with Next, Prisma, Auth0  and GraphQL.",
     image: "https://i.ibb.co/VmsCrhd/Image-3.png",
     color: "#E8EBFF",
     button: "#2F5B8D",
