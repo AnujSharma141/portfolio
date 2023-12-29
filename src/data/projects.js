@@ -12,16 +12,7 @@ const projects = [
     text: "care",
     url: "https://care-lac.vercel.app/",
     description:
-      "injury tracking dashboard made with next, prisma, and graphql.",
-    image: "https://i.ibb.co/VmsCrhd/Image-3.png",
-    color: "#E8EBFF",
-    button: "#2F5B8D",
-  },
-  {
-    text: "tralo",
-    url: "https://tralo.netlify.app/",
-    description:
-      "frontend of a real estate application.",
+      "injury tracking app made with next, prisma, and graphql.",
     image: "https://i.ibb.co/VmsCrhd/Image-3.png",
     color: "#E8EBFF",
     button: "#2F5B8D",
