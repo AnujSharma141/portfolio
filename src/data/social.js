@@ -22,7 +22,7 @@ const social = [{
     name: "linkedin"
 },
 {
-    link: "https://drive.google.com/file/d/1EdhWxvqh5pgg3xgdXZIKijNr4hnphb2A/view",
+    link: "https://drive.google.com/file/d/1blSRFqb6JJazRhhIp0WYmUFeNLRHe46N/view",
     icon: linkedin,
     name: "resume"
 }]

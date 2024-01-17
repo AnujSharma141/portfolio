@@ -40,7 +40,7 @@ const IndexPage = () => {
       <div className={dark?"land dark-land": "land"}>     
       <div className="textbox-wrap">
         <img src={pfp} className='pfp' alt="" />
-        <p className={dark?"textbox-text dark-text": "textbox-text"}>hey there, im
+        <p className={dark?"textbox-text dark-text": "textbox-text"}>hey, im
         <span className={dark?"textbox-title dark-title": "textbox-title"}>anuj sharma</span>
         (he/him)
         </p>
@@ -58,15 +58,17 @@ const IndexPage = () => {
 
       <div className={dark?"about dark-about": "about"}>
       <p className={dark?"about-text dark-about-text": "about-text"}>
-      recently graduated in <br /> 
-        <span className={dark?"about-text-black dark-about-text": "about-text-black"}>communication and computer engineering </span> <Emoji src={student} /> <br />
+      
+      a graduated bachelor's in <br/>
+      <span className={dark?"about-text-black dark-about-text": "about-text-black"}>communication and computer engineering </span><Emoji src={student} />  <br />
       i like to read about web technologies and i absolutely <Emoji src={heart} /> javascript <br />
-      also i play <a target="_blank" href="https://playvalorant.com/en-gb/"><Emoji src={valorant} /></a> or watch some anime when free ;p 
+      also am actively contributing to open source libraries.
+       {/* and play <a target="_blank" href="https://playvalorant.com/en-gb/"><Emoji src={valorant} /></a>  when free. */}
       </p>
       </div>
     
 
-      <div className={dark?"project dark-project": "project"}>
+      {/* <div className={dark?"project dark-project": "project"}>
       <h2 className={dark?"project-heading dark-title": "project-heading"}>work experience<Emoji src={work} /></h2>
       {experience.map(item=>{
         return<div className="exp-item"> 
@@ -80,7 +82,7 @@ const IndexPage = () => {
         </div>
         </div>
       })}
-      </div>
+      </div> */}
 
 
       <div className={dark?"project dark-project": "project"}>
@@ -111,7 +113,7 @@ const IndexPage = () => {
       </div>
 
       <div className="social">
-        <h3 className="social-title">hmu ill respond for sure <Emoji src={mail} /></h3>
+        <h3 className="social-title">contact links <Emoji src={mail} /></h3>
         <div className="social-links">{social.map(item=>{
           return(
             <><a className={dark?"social-link dark-link": "social-link"} target="_blank" href={item.link}>{item.name}</a></>
