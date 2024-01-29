@@ -6,7 +6,10 @@ import projects from "../data/projects"
 import social from "../data/social"
 import experience from '../data/experience'
 import blogs from "../data/blogs"
-
+import tralo from '../images/tralo.png'
+import care from '../images/care.png'
+import reactsearch from '../images/reactsearch.png'
+import kaizen from '../images/kaizen.png'
 
 import Emoji from '../components/emoji'
 
@@ -25,6 +28,8 @@ import blog from '../images/writing-hand_270d-fe0f.png'
 const IndexPage = () => {
   const [dark, setDark] = useState(false)  
   const toggleSwitch = () => setDark(!dark)   
+
+  const images = {tralo: tralo, care: care, reactsearch: reactsearch, kaizen:kaizen}
 
   return (
     <main className={dark?"dark main":"light main"}>
@@ -91,6 +96,7 @@ const IndexPage = () => {
         return<>
         <div className="project-item">
           <div className="project-counter" >
+            <img style={{width: '36vw', border: '1px solid #ebebeb', borderRadius: '1vw', marginTop: '5vw'}} src={images[item.text]} />
             <a href={item.url} target="_blank" className={dark?"project-title dark-link": "project-title"}>{item.text}</a>
             <p className={dark?"project-text dark-text": "project-text"}>{item.description}</p>
           </div>

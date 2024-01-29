@@ -1,10 +1,11 @@
+
 const projects = [
   {
     text: "reactsearch",
     url: "https://reactsearch.js.org/",
     description:
       "npm package to create custom react searchbar.",
-    image: "https://i.ibb.co/h7q1vDt/Group-1.png",
+    image: '',
     color: "#FFE3F4",
     button: "#AD29A4",
   },
@@ -27,11 +28,10 @@ const projects = [
     button: "#C97726",
   },
   {
-    text: "stonk",
-    url: "https://stonk.js.org/",
-    image: "https://i.ibb.co/kK1Hh1L/Group-2.png",
+    text: "tralo",
+    url: "https://tralo.netlify.app/",
     description:
-      "cli tool to monitor indian stocks.",
+      "real estate application made with react, chakra ui, mapbox api",
     color: "#EAFEF9",
     button: "#32A37A",
   },
