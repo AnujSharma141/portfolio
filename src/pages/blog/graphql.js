@@ -16,7 +16,7 @@ export default function graphql() {
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Martian+Mono&display=swap" rel="stylesheet"></link>
       
     <div className='blog'>
-      <img src="https://i.pinimg.com/564x/0c/0d/93/0c0d93995f1678f95f056cb482d28ff6.jpg" className='blog-hero' alt="" />
+      <img src="https://industrywired.com/wp-content/uploads/2022/04/Top-10-Animes-that-Encourage-to-Coding-Skills.jpg"className='blog-hero' alt="" />
     <div className='blog-heading'>/making an anime data GraphQL API</div>
     <div className='blog-author'>by anuj sharma</div>
     <div className='blog-sub'>12 min read</div>
